@@ -10,7 +10,7 @@ yarn
 yarn start
 ```
      
-## Website
+## Webapp
 https://shopping-dianebodin.netlify.app
 
 ## Demo
