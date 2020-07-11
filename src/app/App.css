@@ -1,0 +1,239 @@
+/* COMMON */
+
+body {
+  margin-top : 200px;
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  margin-bottom: 100px;
+}
+.active {
+  font-weight: bold;
+  color: red;
+}
+.focus {
+  cursor: pointer !important;
+}
+.crimson {
+  color: red !important;
+}
+.bg-crimson {
+  background-color: red !important;
+}
+.red {
+  border: 1px solid red;
+}
+.no-outline {
+  outline: none !important;
+}
+.bottom {
+  margin-bottom: 35px;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+  border-bottom: 1px solid lightgrey;
+}
+.navbar-brand {
+  font-size: 28px;
+  padding: 20px 44px;
+  color: red !important;
+}
+.bg-light.orange {
+  background: #FFC007 !important;
+}
+.black {
+  color: black;
+  position: relative;
+}
+.menu-right {
+  position: relative;
+}
+.badge {
+  position: absolute;
+  font-size: 14px;
+  right: -10px;
+  top: 22px;
+}
+
+
+/* SIDEBAR */
+
+.sidebar ul {
+  list-style-type: none;
+  margin: 0 50px 0 0;
+  padding: 0;
+}
+.sidebar li {
+  margin-bottom: 15px;
+  background-color: #FFC007;
+  padding: 5px 0px 5px 10px;
+  box-shadow: 6px 5px 5px lightgrey;
+  width: 120px;
+}
+
+
+/* CARD */
+
+.card {
+  margin-bottom: 40px;
+  position: relative;
+  box-shadow: 0px 22px 24px 0px rgba(46, 51, 51, 0.07);
+  font-size: 13px;
+}
+.card img {
+  display: inline-block;
+  margin: 10px auto;
+  width: 130px; 
+  height: 130px;
+}
+
+
+/* MODAL */
+
+.modal-body img {
+  margin-left: 50px;
+}
+.modal-body .col-sm {
+  margin-left: 80px;
+}
+.btn-warning:focus {
+  box-shadow: none;
+}
+
+
+/* ROW */
+
+.btn-danger {
+  background-color: red !important;
+  color: white !important;
+  border-radius: 50%;
+}
+.td-row p {
+  font-size: 12px;
+}
+.td-row img {
+  margin-top: 10px;
+}
+.tr-row {
+  border-bottom: 1px solid lightgray;
+}
+
+
+/* CART */
+
+.cart {
+  margin: 0 35px;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+table {
+  width: 100%;  
+}
+.cell {
+ text-align: center;
+}
+.cart div {
+  margin : 0 10px;
+}
+.cart p {
+  margin-top: 5px;
+}
+.cart li {
+  flex-grow: 1;
+  list-style-type: none;
+}
+.cart table th, .cart table tr {
+  height: 80px;
+}
+.order-summary .list-group-item {
+  background: #EEEEEE;
+}
+.qty {
+  width: 40px;
+  padding: 5px 0;
+}
+.white, .white:hover {
+  color: white;
+  text-decoration: none;
+}
+.flex  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.flex li {
+  flex-grow: 1;
+  padding: 0;
+}
+.checkout {
+  margin-top: 5px;
+  color: white !important;
+}
+.disabled {
+  opacity: .65;
+}
+
+
+/* CHECKOUT */
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #FFC007;
+}
+
+
+/* CONFIRM */
+
+.address {
+  list-style-type: none;
+  margin-top: 25px;
+  margin-right: 45px;
+}
+tr {
+  text-align: center;
+}
+.row strong {
+  margin: 40px 0 0 10px;
+}
+.tr-summary {
+  font-size: 12px;
+}
+.table-summary {
+  margin-top: 25px;
+}
+.truck-skew {
+  position: relative;
+  bottom: 31px;
+  left: 10px;
+}
+h6 p {
+  font-size: 12px;
+  color: grey;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 991px) {
+  .sidebar li {
+    width: 80px;
+    font-size: 12px;
+  }
+  .card img {
+    display: inline-block;
+    margin: 10px auto;
+    width: 50px; 
+    height: 50px;
+  }
+  .see-detail {
+    position: relative;
+    right: 15px;
+  }
+}
