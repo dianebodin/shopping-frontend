@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const SideMenu = ({ changeCategory, category }) => {
 
   const links = ["Fruits", "Légumes", "Crémerie", "Epicerie", "Boissons"];
@@ -18,6 +17,6 @@ const SideMenu = ({ changeCategory, category }) => {
       </ul>
     </div>
   );
-}
+};
 
 export default SideMenu;

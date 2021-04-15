@@ -4,7 +4,6 @@ import '../../App.css';
 import Table from '../components/Table';
 import { useSelector } from 'react-redux';
 
-
 const Cart = () => {
 
   const items = useSelector(state => state.items);
@@ -20,48 +19,46 @@ const Cart = () => {
   }, [items, subTotal, total]);
 
   return (
-    <>
-      <div className="container">
-        <div className="row">
-          <div className="col-sm cart">
-            <Table items={items} />
-          </div>
+    <div className="container">
+      <div className="row">
+        <div className="col-sm cart">
+          <Table items={items} />
+        </div>
 
-          <div className="col-sm-3 order-summary">
-            <ul className="list-group">
-              <li className="list-group-item">Récapitulatif</li>
+        <div className="col-sm-3 order-summary">
+          <ul className="list-group">
+            <li className="list-group-item">Récapitulatif</li>
 
-              <li className="list-group-item">
-                <ul className="list-group flex">
-                  <li className="text-left">Sous-total</li>
-                  <li className="text-right">{subTotal.toFixed(2)} €</li>
-                </ul>
-                <ul className="list-group flex">
-                  <li className="text-left">Livraison</li>
-                  <li className="text-right">{shipping.toFixed(2)} €</li>
-                </ul>
-                <ul className="list-group flex">
-                  <li className="coupon crimson">
-                    <small>Code promo</small>
-                  </li>
-                </ul>
-              </li>
+            <li className="list-group-item">
+              <ul className="list-group flex">
+                <li className="text-left">Sous-total</li>
+                <li className="text-right">{subTotal.toFixed(2)} €</li>
+              </ul>
+              <ul className="list-group flex">
+                <li className="text-left">Livraison</li>
+                <li className="text-right">{shipping.toFixed(2)} €</li>
+              </ul>
+              <ul className="list-group flex">
+                <li className="coupon crimson">
+                  <small>Code promo</small>
+                </li>
+              </ul>
+            </li>
 
-              <li className="list-group-item ">
-                <ul className="list-group flex">
-                  <li className="text-left">Total</li>
-                    <li className="text-right">{subTotal === 0.00 ? "0.00" : total.toFixed(2)} €</li>
-                </ul>
-              </li>
-            </ul>
-              <Link to="/checkout" className={`white btn btn-light btn-lg btn-block checkout ${!items.length ? "disabled" : ""} bg-crimson`}>
-                Payer
-              </Link>
-          </div>
+            <li className="list-group-item ">
+              <ul className="list-group flex">
+                <li className="text-left">Total</li>
+                  <li className="text-right">{subTotal === 0.00 ? "0.00" : total.toFixed(2)} €</li>
+              </ul>
+            </li>
+          </ul>
+            <Link to="/checkout" className={`white btn btn-light btn-lg btn-block checkout ${!items.length ? "disabled" : ""} bg-crimson`}>
+              Payer
+            </Link>
         </div>
       </div>
-    </>
+    </div>
   );  
-}
+};
 
 export default Cart;

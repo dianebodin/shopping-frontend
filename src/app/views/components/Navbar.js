@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-
 const Navbar = ({ filter, setIsFiltering }) => {
 
   const items = useSelector(state => state.items);
@@ -28,7 +27,6 @@ const Navbar = ({ filter, setIsFiltering }) => {
             </form>
           </div>
           <div className="menu-right">
-
             <Link to="/cart">
               <i className="fas fa-shopping-bag fa-2x black"></i>
               <span className="badge badge-pill badge-success">{items.length > 0 && items.length}</span>

@@ -8,7 +8,7 @@ export const UserProfileContext = createContext({
   zipCode: "",
   city: "",
   setUserProfileContext: info => {} //setter du contexte
-})
+});
 
 //maj
 const UserProfileContextProvider = ({ children }) => {
@@ -33,7 +33,7 @@ const UserProfileContextProvider = ({ children }) => {
   }
 
   const [userProfile, setUserProfile] = useState(userProfileState);
-  return <UserProfileContext.Provider value={userProfile}>{ children }</UserProfileContext.Provider>
-}
+  return <UserProfileContext.Provider value={userProfile}>{ children }</UserProfileContext.Provider>;
+};
 
 export default UserProfileContextProvider;

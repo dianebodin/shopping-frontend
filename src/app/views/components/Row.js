@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { updateCart, removeFromCart } from '../../lib/actions';
 import { useDispatch } from 'react-redux';
 
-
 const Row = ({ i, index, size }) => {
 
   const [qty, setQty] = useState(i.quantity); //qty valeur locale, quantity pour l'init en tant que getteur
@@ -11,7 +10,7 @@ const Row = ({ i, index, size }) => {
 
   useEffect(() => {
     dispatch(updateCart(i.id, qty))
-  }, [dispatch, i.id, qty])
+  }, [dispatch, i.id, qty]);
 
   const remove = (id) => dispatch(removeFromCart(id));
 
@@ -43,6 +42,6 @@ const Row = ({ i, index, size }) => {
       </td>
     </tr>
   );
-}
+};
 
 export default Row;

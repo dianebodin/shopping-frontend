@@ -30,7 +30,6 @@ body {
   margin-bottom: 35px;
 }
 
-
 /* NAVBAR */
 
 .navbar {
@@ -58,7 +57,6 @@ body {
   top: 22px;
 }
 
-
 /* SIDEBAR */
 
 .sidebar ul {
@@ -73,7 +71,6 @@ body {
   box-shadow: 6px 5px 5px lightgrey;
   width: 120px;
 }
-
 
 /* CARD */
 
@@ -90,7 +87,6 @@ body {
   height: 130px;
 }
 
-
 /* MODAL */
 
 .modal-body img {
@@ -102,7 +98,6 @@ body {
 .btn-warning:focus {
   box-shadow: none;
 }
-
 
 /* ROW */
 
@@ -120,7 +115,6 @@ body {
 .tr-row {
   border-bottom: 1px solid lightgray;
 }
-
 
 /* CART */
 
@@ -180,14 +174,12 @@ table {
   opacity: .65;
 }
 
-
 /* CHECKOUT */
 
 .form-control:focus {
   box-shadow: none;
   border-color: #FFC007;
 }
-
 
 /* CONFIRM */
 
@@ -217,7 +209,6 @@ h6 p {
   font-size: 12px;
   color: grey;
 }
-
 
 /* MEDIA QUERIES */
 

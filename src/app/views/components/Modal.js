@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { addToCart } from '../../lib/actions';
 import { useDispatch } from 'react-redux';
 
-
 const Modal = ({ item }) => {
 
   const [qty, setQty] = useState(1);
@@ -10,7 +9,6 @@ const Modal = ({ item }) => {
   const dispatch = useDispatch();
   const add = (item, quantity) => dispatch(addToCart(item, quantity));
   
-
   return (
     <div className="modal fade" id={item.ref} data-backdrop="static" tabIndex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div className="modal-dialog modal-lg" role="document">
