@@ -1,6 +1,6 @@
 # shopping-frontend
 
-> React
+> React, Redux, Context API
     
 ## Running
 ```

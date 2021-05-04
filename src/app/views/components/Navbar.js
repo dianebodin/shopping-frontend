@@ -19,11 +19,16 @@ const Navbar = ({ filter, setIsFiltering }) => {
         <div className="ml-auto cart">
           <div>
             <form className="search form-inline my-2 my-lg-0">
-              <input className="form-control mr-sm-2" type="search" placeholder="Rechercher..." aria-label="Search" 
-              onChange={(e) => { 
-                setIsFiltering(e.target.value.length > 0);
-                filter(e.target.value);
-              }} />
+              <input 
+                className="form-control mr-sm-2" 
+                type="search" 
+                placeholder="Rechercher..." 
+                aria-label="Search" 
+                onChange={e => { 
+                  setIsFiltering(e.target.value.length > 0);
+                  filter(e.target.value);
+                }} 
+              />
             </form>
           </div>
           <div className="menu-right">

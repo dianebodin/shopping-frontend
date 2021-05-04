@@ -23,6 +23,8 @@ const Checkout = () => {
     validate();
   });
 
+  const handleProfileContext = e => setUserProfileContext({ [e.target.name]: e.target.value });
+
   return (
     <div className="col-sm-6 offset-3">
       <h2>Mes informations personnelles</h2>
@@ -30,25 +32,75 @@ const Checkout = () => {
       <form>
         <div className="row">
           <div className="col">
-            <input type="text" className="form-control" name="firstName" placeholder="Prénom" property="" defaultValue={firstName} onChange={e => { setUserProfileContext({ [e.target.name]: e.target.value }) }} />
+            <input 
+              type="text" 
+              className="form-control" 
+              name="firstName" 
+              placeholder="Prénom" 
+              property="" 
+              defaultValue={firstName} 
+              onChange={handleProfileContext} 
+            />
           </div>
           <div className="col">
-            <input type="text" className="form-control" name="lastName" placeholder="Nom" property="" defaultValue={lastName} onChange={e => { setUserProfileContext({ [e.target.name]: e.target.value }) }} />
+            <input 
+              type="text" 
+              className="form-control" 
+              name="lastName" 
+              placeholder="Nom" 
+              property="" 
+              defaultValue={lastName} 
+              onChange={handleProfileContext} 
+            />
           </div>
         </div>
         <br />
         <div className="form-group">
-          <input type="email" className="form-control" id="exampleInputEmail1" name="email" placeholder="Email" property="" defaultValue={email} onChange={e => { setUserProfileContext({ [e.target.name]: e.target.value }) }}/>
+          <input 
+            type="email" 
+            className="form-control" 
+            id="exampleInputEmail1" 
+            name="email" 
+            placeholder="Email" 
+            property="" 
+            defaultValue={email} 
+            onChange={handleProfileContext}
+          />
         </div>
         <div className="form-group">
-          <input type="text" className="form-control" id="exampleInputEmail1" name="address" placeholder="Adresse" property="" defaultValue={address} onChange={e => { setUserProfileContext({ [e.target.name]: e.target.value }) }} />
+          <input 
+            type="text" 
+            className="form-control" 
+            id="exampleInputEmail1" 
+            name="address" 
+            placeholder="Adresse" 
+            property="" 
+            defaultValue={address} 
+            onChange={handleProfileContext} 
+          />
         </div>
         <div className="row">
           <div className="col">
-            <input type="text" className="form-control" name="zipCode" placeholder="Code postal" property="" defaultValue={zipCode} onChange={e => { setUserProfileContext({ [e.target.name]: e.target.value }) }} />
+            <input 
+              type="text" 
+              className="form-control" 
+              name="zipCode" 
+              placeholder="Code postal" 
+              property="" 
+              defaultValue={zipCode} 
+              onChange={handleProfileContext} 
+            />
           </div>
           <div className="col">
-            <input type="text" className="form-control" name="city" placeholder="Ville" property="" defaultValue={city} onChange={e => { setUserProfileContext({ [e.target.name]: e.target.value }) }} />
+            <input 
+              type="text" 
+              className="form-control" 
+              name="city" 
+              placeholder="Ville" 
+              property="" 
+              defaultValue={city} 
+              onChange={handleProfileContext} 
+            />
           </div>
         </div>
         <br />

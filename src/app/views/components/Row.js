@@ -12,7 +12,7 @@ const Row = ({ i, index, size }) => {
     dispatch(updateCart(i.id, qty))
   }, [dispatch, i.id, qty]);
 
-  const remove = (id) => dispatch(removeFromCart(id));
+  const remove = id => dispatch(removeFromCart(id));
 
   return (
     <tr className={size > 1 && size-1 > index ? "tr-row" : null}>
